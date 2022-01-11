@@ -40,10 +40,10 @@ Style: liyuu/鲤鱼/唐 可可,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H0
 Style: sayurin/涩谷 香音,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H000000FF,&H003590FF,&H00002498,0,0,0,0,100,100,0,0,1,3,4,2,10,10,40,1
 Style: nako/岚 千砂都,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H007345F8,&H00906EFF,&H40120048,0,0,0,0,100,100,0,0,1,3,4,2,10,10,40,1
 Style: nagi/叶月 恋,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H007345F8,&H00C60300,&H00670B05,0,0,0,0,100,100,0,0,1,2,4,2,10,10,40,1
-Style: 麻油鸡/中须 霞/ksks,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H007345F8,&H0000B5D0,&H0000435A,0,0,0,0,100,100,0,0,1,2,4,2,10,10,40,1
 Style: 麻圆/艾玛·维尔德,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H007345F8,&H0064B510,&H00627404,0,0,0,0,100,100,0,0,1,1.5,4,2,10,10,40,1
 Style: 菜宝/法元明菜/钟岚珠,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H007345F8,&H006F75EA,&H00030686,0,0,0,0,100,100,0,0,1,2,4,2,10,10,40,1
 Style: 全员/all,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H000000FF,&H00000000,&H00505051,0,0,0,0,100,100,0,0,1,3,4,2,10,10,40,1
+Style: 麻油鸡/中须 霞/ksks,Resource Han Rounded SC Medium,100,&H00FFFFFF,&H007345F8,&H0000A9C3,&H00036D80,0,0,0,0,100,100,0,0,1,2,4,2,10,10,40,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
