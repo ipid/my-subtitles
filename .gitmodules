@@ -1,0 +1,3 @@
+[submodule "my-aegisub-effects"]
+	path = my-aegisub-effects
+	url = git@github.com:ipid/my-aegisub-effects.git
