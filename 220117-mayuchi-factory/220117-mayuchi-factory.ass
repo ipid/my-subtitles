@@ -15,9 +15,10 @@ Audio File: 220117-mayuchi-factory.mp4
 Video File: 220117-mayuchi-factory.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.500000
-Active Line: 8
-Video Position: 1036
+Video Zoom Percent: 0.375000
+Scroll Position: 12
+Active Line: 17
+Video Position: 2056
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -44,3 +45,5 @@ Dialogue: 0,0:00:46.01,0:00:49.79,麻油鸡/中须 霞/ksks,,0,0,0,,{\blur6}里�
 Dialogue: 0,0:00:49.79,0:00:52.81,麻油鸡/中须 霞/ksks,,0,0,0,,{\blur6}鲤鱼就说「{\rliyuu/鲤鱼/唐 可可\blur6}我知道这个{\r\blur6}」 真的超可爱
 Dialogue: 0,0:00:52.81,0:00:55.63,麻油鸡/中须 霞/ksks,,0,0,0,,{\blur6}鲤酱好可爱哦 好想多和鲤酱说几句话{もっと(リーちゃんと)話してみたい}
 Dialogue: 0,0:00:55.63,0:01:01.68,麻油鸡/中须 霞/ksks,,0,0,0,,{\blur6}鲤鱼酱在 MC 环节说话的样子 真的超可爱
+Dialogue: 0,0:01:03.48,0:01:07.49,麻油鸡/中须 霞/ksks,,0,0,0,,{\blur6}她真的是一个人从中国过来的 好厉害
+Dialogue: 0,0:01:08.52,0:01:09.82,麻油鸡/中须 霞/ksks,,0,0,0,,{\blur6}真的太可爱了
