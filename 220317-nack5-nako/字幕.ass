@@ -15,9 +15,10 @@ Audio File: 导出.mp4
 Video File: 导出.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.500000
-Active Line: 38
-Video Position: 3027
+Video Zoom Percent: 0.375000
+Scroll Position: 9
+Active Line: 21
+Video Position: 1527
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -49,7 +50,7 @@ Dialogue: 0,0:00:39.60,0:00:43.11,岬奈子-nako,,0,0,0,,真的特别两极分�
 Dialogue: 0,0:00:42.98,0:00:44.14,男主持,,0,0,0,,噢
 Dialogue: 0,0:00:44.14,0:00:50.12,男主持,,0,0,0,,啊 Nako是被其他成员依赖的人吗
 Dialogue: 0,0:00:47.46,0:00:48.22,岬奈子-nako,,0,0,0,,嗯！
-Dialogue: 0,0:00:50.89,0:00:54.76,岬奈子-nako,,0,0,0,,谢天谢地了 与其说是被依赖的人
+Dialogue: 0,0:00:50.89,0:00:54.76,岬奈子-nako,,0,0,0,,那就谢天谢地了 与其说是被依赖的人
 Dialogue: 0,0:00:54.76,0:00:57.09,岬奈子-nako,,0,0,0,,感觉更像是被玩弄的人了
 Dialogue: 0,0:00:56.04,0:00:58.41,女主持,,0,0,0,,被玩弄…被玩弄的妈妈？
 Dialogue: 0,0:00:58.70,0:01:00.81,岬奈子-nako,,0,0,0,,可以说是被人玩弄的妈妈了
