@@ -34,7 +34,7 @@ vsrepo install xyvsf vsfm imwri ffms2
 | 配置项                    | 说明                                                         |
 | ------------------------- | ------------------------------------------------------------ |
 | FINAL_FILENAME            | 压制出的最终文件的名字。对 encode-base 无效                  |
-| ORIGINAL_AUDIO_VIDEO_PATH | 音频文件的路径，可以是任何格式，只要 ffmpeg 支持即可。本脚本会将该音频编码为 AAC 音频格式。 |
+| ORIGINAL_AUDIO_VIDEO_PATH | 音频文件的路径，可以是任何格式，只要 ffmpeg 支持即可。本脚本会将该音频编码为 AAC 音频格式。<br /> **注:** 当 AAC_AUDIO_PATH 指向的路径存在时，此设置无效。 |
 | AAC_AUDIO_PATH            | 如果下载下来的视频 / 音频文件已经是 AAC 编码，则可以直接将视频或音频文件的路径填到这里。（ **例:**  从 YouTube 下载时格式选择了 AAC；某网站上下载的广播原本就是 AAC 编码）<br /> **注:** 当该路径不存在时，脚本会把 ORIGINAL_AUDIO_VIDEO_PATH 所指向的音频文件编码为 AAC，并输出到该路径。 |
 | COVER_PATH                | 「一图流」图片的路径。                                       |
 | SUBTITLE_PATH             | 字幕文件的路径，该字幕文件会使用 xy-VSFilter 压制到视频中。该字段与 SUBTITLE_VSFM_PATH 是独立的。 |
