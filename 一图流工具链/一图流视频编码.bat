@@ -12,6 +12,7 @@ set AAC_AUDIO_PATH=请根据README的说明，在需要的时候修改这个参�
 
 rem ------ ↑ 请修改此部分 ↑ ------
 
+set FRAME_RATE=30
 set AAC_BITRATE=256k
 set BASE_VIDEO_GOP_LENGTH=5
 set BASE_VIDEO_CRF=16
@@ -51,7 +52,9 @@ if exist "%AAC_AUDIO_PATH%" (
     set VERIFIED_AAC_SOURCE=__aac_audio.mp4
 )
 
-ffmpeg -y -loop 1 -i "%COVER_PATH%" -map 0:v:0 -c:v libx264 -preset:v veryfast -crf:v "%BASE_VIDEO_CRF%" -vf "scale=out_color_matrix=bt709:out_range=tv" -x264opts "keyint=999999:min-keyint=999999:no-scenecut:bframes=0" -t "%BASE_VIDEO_GOP_LENGTH%" -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -color_range tv __base-video-repetend.mp4
+rem 以下 vf 部分参考了博客：https://fireattack.wordpress.com/2019/09/19/convert-image-to-video-using-ffmpeg/
+
+ffmpeg -y -loop 1 -i "%COVER_PATH%" -map 0:v:0 -c:v libx264 -preset:v veryfast -crf:v "%BASE_VIDEO_CRF%" -vf "format=pix_fmts=rgb24,scale=out_color_matrix=bt709:out_range=tv,format=pix_fmts=yuv420p" -x264opts "keyint=999999:min-keyint=999999:no-scenecut:bframes=0" -t "%BASE_VIDEO_GOP_LENGTH%" -r "%FRAME_RATE%" -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -color_range tv __base-video-repetend.mp4
 
 if %errorlevel% neq 0 goto show-error
 
