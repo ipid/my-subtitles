@@ -1,0 +1,67 @@
+﻿[Script Info]
+Title: ip君的样式 - v2.1
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: None
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Last Style Storage: Default
+Video File: ?dummy:60.000000:300:1920:1080:147:147:147:
+Video AR Value: 1.777778
+Video Zoom Percent: 0.500000
+Active Line: 0
+Video Position: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,140,&H002425FF,&H000000FF,&H00FF0033,&H0000FFFF,0,0,0,0,100,100,0,0,1,10,15,2,10,10,70,1
+Style: Staff,方正FW筑紫A圆 简 E,92,&H001EA1FD,&H000000FF,&H00FFFFFF,&H008AE6EA,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: Staff黑,方正FW筑紫A圆 简 E,92,&H00555652,&H000000FF,&H00FFFFFF,&H206A6660,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 个活-鲤鱼,方正FW筑紫A圆 简 E,92,&H00AA6FFB,&H000000FF,&H00FFFFFF,&H00BB93FF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-全员,方正FW筑紫A圆 简 E,92,&H009B46A5,&H000000FF,&H00FFFFFF,&H20AE6393,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-千-Nako,方正FW筑紫A圆 简 E,92,&H00A069FC,&H000000FF,&H00FFFFFF,&H20BF99FF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-可可-鲤鱼,方正FW筑紫A圆 简 E,92,&H00A7B300,&H000000FF,&H00FFFFFF,&H50EBF793,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-堇-Pay,方正FW筑紫A圆 简 E,92,&H0000AB39,&H000000FF,&H00FFFFFF,&H5093FF9E,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-恋-渚,方正FW筑紫A圆 简 E,92,&H00B9110A,&H000000FF,&H00FFFFFF,&H00D26765,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-樱小路希奈子-铃原希实,方正FW筑紫A圆 简 E,92,&H0000A7D8,&H000000FF,&H00FFFFFF,&H0054C4D5,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-米女芽衣-薮岛朱音,方正FW筑紫A圆 简 E,92,&H003535FF,&H000000FF,&H00FFFFFF,&H207677FF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-若菜四季-大熊和奏,方正FW筑紫A圆 简 E,92,&H0087C200,&H000000FF,&H00FFFFFF,&H20C5E671,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-香音-Sayu,方正FW筑紫A圆 简 E,92,&H001573FF,&H000000FF,&H00FFFFFF,&H2079AFFF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 星-鬼塚夏美-绘森彩,方正FW筑紫A圆 简 E,92,&H00BF46F9,&H000000FF,&H00FFFFFF,&H20E1A1F4,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-中须霞-麻油鸡,方正FW筑紫A圆 简 E,92,&H0000A7D8,&H000000FF,&H00FFFFFF,&H008AE6EA,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-侑-妃喵,方正FW筑紫A圆 简 E,92,&H004B524C,&H000000FF,&H00FFFFFF,&H002E884E,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-岚珠-菜宝,方正FW筑紫A圆 简 E,92,&H00737AFE,&H000000FF,&H00FFFFFF,&H00B8B7EE,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-果林-miyu碳,方正FW筑紫A圆 简 E,92,&H00C65E48,&H000000FF,&H00FFFFFF,&H00FAA275,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-栞子-萌P,方正FW筑紫A圆 简 E,92,&H0084B437,&H000000FF,&H00FFFFFF,&H0083CD70,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-步梦-阿兔嘭,方正FW筑紫A圆 简 E,92,&H008A53FC,&H000000FF,&H00FFFFFF,&H009994FF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-爱-奈酱,方正FW筑紫A圆 简 E,92,&H000058FF,&H000000FF,&H00FFFFFF,&H008D8DFF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-璃奈-切咪,方正FW筑紫A圆 简 E,92,&H00B0998D,&H000000FF,&H00FFFFFF,&H00E2CBBF,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-米娅-秀秀,方正FW筑紫A圆 简 E,92,&H00849597,&H000000FF,&H00FFFFFF,&H0097B2C3,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-艾玛-麻圆,方正FW筑紫A圆 简 E,92,&H005AB472,&H000000FF,&H00FFFFFF,&H0090E5B1,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 虹-雫-146,方正FW筑紫A圆 简 E,92,&H00F8A108,&H000000FF,&H00FFFFFF,&H00FFC09F,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
+Style: 全局阴影,方正FW筑紫A圆 简 E,92,&H00555652,&H000000FF,&H00FFFFFF,&H84535353,0,0,0,0,100,100,0,0,1,8,12,2,10,10,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.01,Default,,0,0,0,template line all keeptags,!relayer(0)!!restyle("全局阴影")!
+Comment: 0,0:00:00.00,0:00:00.01,Default,,0,0,0,template line all keeptags,!relayer(1)!
+Comment: 0,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,,使用方法：
+Comment: 0,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,,     1. 点击 字幕 -> 样式管理器 -> 「从脚本中导入」按钮导入
+Comment: 0,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,,     2. 复制上面两行带 relayer 的特效轴
+Comment: 0,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,,     3. 打轴
+Comment: 0,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,,     4. 打完轴后点击 自动化 -> 应用卡拉 OK 模板 来添加阴影
+Comment: 0,0:00:00.00,0:00:05.00,星-鬼塚夏美-绘森彩,,0,0,0,karaoke,测试
+Comment: 0,0:00:00.00,0:00:05.00,星-千-Nako,,0,0,0,karaoke,测试
+Comment: 0,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,karaoke,测试
+Comment: 0,0:00:00.00,0:00:05.00,Staff,,0,0,0,karaoke,测试
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,测 试
+Dialogue: 1,0:00:00.00,0:00:05.00,星-鬼塚夏美-绘森彩,,0,0,0,fx,测 试
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,测试
+Dialogue: 1,0:00:00.00,0:00:05.00,星-千-Nako,,0,0,0,fx,测试
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,测试
+Dialogue: 1,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,fx,测试
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,测试
+Dialogue: 1,0:00:00.00,0:00:05.00,Staff,,0,0,0,fx,测试

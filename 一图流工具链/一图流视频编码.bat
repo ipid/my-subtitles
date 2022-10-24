@@ -7,7 +7,7 @@ rem ------ ↓ 请修改此部分 ↓ ------
 
 set FINAL_FILENAME=测试输出 - 一图流视频
 set ORIGINAL_AUDIO_VIDEO_PATH=测试音频 - Dream Land! Dream World!.mp3
-set COVER_PATH=测试封面 - 彩条.jpg
+set COVER_PATH=测试图片 - 彩条 - 无描述.png
 set AAC_AUDIO_PATH=请根据README的说明，在需要的时候修改这个参数
 
 rem ------ ↑ 请修改此部分 ↑ ------
