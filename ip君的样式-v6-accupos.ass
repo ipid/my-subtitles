@@ -14,12 +14,38 @@ Last Style Storage: ipid-我的样式-v6-accupos
 Video File: ?dummy:30.000000:150:1920:1080:147:147:147:
 Video AR Value: 1.777778
 Video Zoom Percent: 0.500000
-Scroll Position: 24
-Active Line: 25
-Video Position: 2
+Video Position: 35
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 虹-雫-146-furigana,方正FW筑紫A圆 简 E,46,&H00F8A108,&H00F8A108,&H00FFFFFF,&H00FFC09F,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-艾玛-麻圆-furigana,方正FW筑紫A圆 简 E,46,&H0054B16E,&H004DA567,&H00FFFFFF,&H0090E5B1,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-米娅-秀秀-furigana,方正FW筑紫A圆 简 E,46,&H00849597,&H00617A8E,&H00FFFFFF,&H0097B2C3,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-璃奈-切咪-furigana,方正FW筑紫A圆 简 E,46,&H00A08577,&H00B29789,&H00FFFFFF,&H00E2CBBF,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-爱-奈酱-furigana,方正FW筑紫A圆 简 E,46,&H000058FF,&H000058FF,&H00FFFFFF,&H008D8DFF,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-步梦-阿兔嘭-furigana,方正FW筑紫A圆 简 E,46,&H008A53FC,&H008A53FC,&H00FFFFFF,&H009994FF,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-栞子-萌P-furigana,方正FW筑紫A圆 简 E,46,&H007DAB34,&H006FA51D,&H00FFFFFF,&H0083CD70,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-果林-miyu碳-furigana,方正FW筑紫A圆 简 E,46,&H00C65E48,&H00C65E48,&H00FFFFFF,&H00FAA275,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-岚珠-菜宝-furigana,方正FW筑紫A圆 简 E,46,&H00656DFF,&H00737AFE,&H00FFFFFF,&H00B8B7EE,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,60,1
+Style: 虹-侑-妃喵-furigana,方正FW筑紫A圆 简 E,46,&H004B524C,&H00373737,&H00FFFFFF,&H002E884E,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 虹-中须霞-麻油鸡-furigana,方正FW筑紫A圆 简 E,46,&H00009BCE,&H0029B5E3,&H00FFFFFF,&H008AE6EA,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 水-爱喵-furigana,方正FW筑紫A圆 简 E,46,&H00E030A5,&H00E030A5,&H00FFFFFF,&H20E176BD,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 水-渡边曜-朱夏-furigana,方正FW筑紫A圆 简 E,46,&H00D39E29,&H00C69825,&H00FFFFFF,&H50FFC33B,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,60,1
+Style: 星-鬼塚夏美-绘森彩-furigana,方正FW筑紫A圆 简 E,46,&H00BF46F9,&H00BF46F9,&H00FFFFFF,&H20E1A1F4,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-香音-Sayu-furigana,方正FW筑紫A圆 简 E,46,&H001573FF,&H001573FF,&H00FFFFFF,&H2079AFFF,0,0,0,0,100,100,0,0,1,4.5,3.55,2,10,10,70,1
+Style: 星-若菜四季-大熊和奏-furigana,方正FW筑紫A圆 简 E,46,&H007FB400,&H0083B314,&H00FFFFFF,&H20C5E671,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-米女芽衣-薮岛朱音-furigana,方正FW筑紫A圆 简 E,46,&H003535FF,&H003535FF,&H00FFFFFF,&H207677FF,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-樱小路希奈子-铃原希实-furigana,方正FW筑紫A圆 简 E,46,&H00009FD4,&H000E95C1,&H00FFFFFF,&H0054C4D5,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-恋-渚-furigana,方正FW筑紫A圆 简 E,46,&H00B9110A,&H00B62E21,&H00FFFFFF,&H00D26765,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-堇-Pay-furigana,方正FW筑紫A圆 简 E,46,&H0000AB39,&H001EAA4D,&H00FFFFFF,&H5093FF9E,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-可可-鲤鱼-furigana,方正FW筑紫A圆 简 E,46,&H00ABB706,&H00A1AC08,&H00FFFFFF,&H50EBF793,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,60,1
+Style: 星-千-Nako-furigana,方正FW筑紫A圆 简 E,46,&H009158FB,&H009359EA,&H00FFFFFF,&H20BF99FF,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 星-全员-furigana,方正FW筑紫A圆 简 E,46,&H009B46A5,&H008B2C97,&H00FFFFFF,&H20AE6393,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: 全局阴影-furigana,方正FW筑紫A圆 简 E,46,&H00FFFFFF,&H00FFFFFF,&H00FFFFFF,&H96727272,0,0,0,0,100,100,0,0,1,4.5,6.5,2,10,10,70,1
+Style: 个活-鲤鱼-furigana,方正FW筑紫A圆 简 E,46,&H009158FB,&H008D49E3,&H00FFFFFF,&H00BB93FF,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: Staff黑-furigana,方正FW筑紫A圆 简 E,46,&H00555652,&H004A4A4A,&H00FFFFFF,&H208E8E8E,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: Staff-furigana,方正FW筑紫A圆 简 E,46,&H000077FB,&H003292FD,&H00FFFFFF,&H008AE6EA,0,0,0,0,100,100,0,0,1,4.5,4,2,10,10,70,1
+Style: Default-furigana,方正FW筑紫A圆 简 E,46,&H00555652,&H00555652,&H00FFFFFF,&H206A6660,0,0,0,0,100,100,0,0,1,4,3,2,10,10,70,1
 Style: Default,方正FW筑紫A圆 简 E,92,&H00555652,&H00555652,&H00FFFFFF,&H206A6660,0,0,0,0,100,100,0,0,1,8,6,2,10,10,70,1
 Style: Staff,方正FW筑紫A圆 简 E,92,&H000077FB,&H003292FD,&H00FFFFFF,&H008AE6EA,0,0,0,0,100,100,0,0,1,9,8,2,10,10,70,1
 Style: Staff黑,方正FW筑紫A圆 简 E,92,&H00555652,&H004A4A4A,&H00FFFFFF,&H208E8E8E,0,0,0,0,100,100,0,0,1,9,8,2,10,10,70,1
@@ -51,11 +77,11 @@ Style: 虹-雫-146,方正FW筑紫A圆 简 E,92,&H00F8A108,&H00F8A108,&H00FFFFFF,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Comment: 0,0:00:00.00,0:00:00.01,Default,,0,0,0,code once, --[[ 颜色参数：第二层描边大小、不透明度 ]] EB_WIDTH = 2.5 ; EB_OPACITY = 1 ; EB_BLEND_WHITE = 0.8
-Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,code once,local function getSpecificVar(targetName) local level = 1 while _G.debug.getinfo(level) ~= nil do local i = 1 while true do local name, value = _G.debug.getlocal(level, i) if name == targetName then return value elseif name == nil then break end i = i + 1 end level = level + 1 end return nil end --[[ 通过 subs 字段获取当前字幕内容（但是获取不到 Format: 行，反正这玩意也没人认） ]] local function getSubtitleContent() local assFile = {} local hasSection = {} local playResX = 0 local playResY = 0 local currSubs = getSpecificVar('subs') for i = 1, #currSubs do local sub = currSubs[i] if sub.key == 'PlayResX' then playResX = _G.tonumber(sub.value) elseif sub.key == 'PlayResY' then playResY = _G.tonumber(sub.value) end local section = sub.section if not hasSection[section] then _G.table.insert(assFile, '\n' .. section) hasSection[section] = true end local toInsert = sub.raw --[[ 把符合 kara-templater 匹配模板条件的 Comment 替换成 Dialogue ]] if sub.class == "dialogue" and sub.comment == true and sub.effect:match("[Kk]araoke") then toInsert = _G.string.gsub(toInsert, 'Comment: ', 'Dialogue: ', 1) end _G.table.insert(assFile, toInsert) end if playResX == 0 or playResY == 0 then playResX, playResY = _G.aegisub.video_size() end return _G.table.concat(assFile, '\n'), playResX, playResY end local function getPosWithAccupos(assText, playResX, playResY) local ffi = _G.require('ffi') ffi.cdef([[ void *accupos_init(int32_t width, int32_t height, const char *ass_data, int32_t ass_data_len); void accupos_done(void *lib); int32_t accupos_get_dialogue_num(void *lib); const char *accupos_get_ith_raw(void *lib, int32_t i); int32_t accupos_get_ith_pos_x(void *lib, int32_t i); int32_t accupos_get_ith_pos_y(void *lib, int32_t i); int32_t accupos_get_ith_width(void *lib, int32_t i); int32_t accupos_get_ith_height(void *lib, int32_t i); ]]) local lib = ffi.load(_G.jit.arch == 'x64' and 'accupos64' or 'accupos32') local voidptr = lib.accupos_init(playResX, playResY, assText, #assText) local result = {} local dialogue_num = lib.accupos_get_dialogue_num(voidptr) if dialogue_num < 0 then _G.error('代码出错：accupos 库返回 Dialogue 数量为 -1，这表明初始化出错。') end for i = 1, dialogue_num do local d = { raw = ffi.string(lib.accupos_get_ith_raw(voidptr, i - 1)), pos_x = lib.accupos_get_ith_pos_x(voidptr, i - 1), pos_y = lib.accupos_get_ith_pos_y(voidptr, i - 1), width = lib.accupos_get_ith_width(voidptr, i - 1), height = lib.accupos_get_ith_height(voidptr, i - 1), } if d.width > 0 and d.height > 0 then _G.table.insert(result, d) end end lib.accupos_done(voidptr) return result end local function dump(o) if _G.type(o) == 'table' then local s = '{ ' for k, v in _G.pairs(o) do if _G.type(k) ~= 'number' then k = '"' .. k .. '"' end s = s .. '[' .. k .. '] = ' .. dump(v) .. ',' end return s .. '} ' else return _G.tostring(o) end end local assText, playResX, playResY = getSubtitleContent() local positions = getPosWithAccupos(assText, playResX, playResY) --[[ _G.error('\n\npositions = <'..dump(positions)..'>\n\n') ]] local globalCounter = 1 local lastIndex = -1 local function startsWith(str, pattern) return str:sub(1,#pattern) == pattern end function getPos(index) if orgline.text:gsub('^%s+$', '') == '' then return '' end --[[ _G.error(_G.string.format('\n\norgline.raw = <%s>\n\norgline.comment = <%s>\n\norgline.effect = <%s>\n\n', orgline.raw, orgline.comment, orgline.effect)) ]] if lastIndex ~= index then lastIndex = index local lineRaw = orgline.raw if startsWith(lineRaw, 'Comment: ') then lineRaw = _G.string.gsub(lineRaw, 'Comment: ', 'Dialogue: ', 1) end lineRaw = _G.string.gsub(lineRaw, '%s+$', '') while positions[globalCounter].raw ~= lineRaw do globalCounter = globalCounter + 1 if globalCounter > #positions then _G.error('代码出错：重建的字幕文件与实际字幕不匹配。') end end end local p = positions[globalCounter] return _G.string.format([[\pos(%d,%d)]], p.pos_x, p.pos_y) end function resetMargin() line.margin_l = 0 line.margin_r = 0 line.margin_t = 0 line.margin_b = 0 return '' end
-Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,template line all keeptags,!resetMargin()!!relayer(0)!!restyle('全局阴影')!{!getPos(line.i)!\1a&HFF&\3a&HFF&}
-Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,template line all keeptags,!resetMargin()!!relayer(1)!{!getPos(line.i)!\bord!line.styleref.outline + EB_WIDTH!\shad!line.styleref.shadow - EB_WIDTH!\3c!_G.interpolate_color(EB_BLEND_WHITE,'&HFFFFFF&',line.styleref.color2)!\3a&H!_G.string.format('%02X',(1-EB_OPACITY)*255)!&\1a&HFF&}
-Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,template line all keeptags,!resetMargin()!!relayer(2)!{!getPos(line.i)!\shad0}
+Comment: 0,0:00:00.00,0:00:00.01,Default,,0,0,0,code once, --[[ 颜色参数：第二层描边大小、不透明度 ]] EB_WIDTH = 2.5 ; EB_OPACITY = 1 ; EB_BLEND_WHITE = 0.8 ; GLOBAL_SHADOW_STYLE = '全局阴影'
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,code once,if _G.aegisub.frame_from_ms(0) == nil then local errorMsg = "【错误】\n\n本卡拉 OK 模板必须在打开视频之后才能运行。\n请打开一个视频后再运行本卡拉 OK 模板。\n如果没有视频，请点击「视频」→「使用空白视频」。\n" _G.aegisub.dialog.display({ { class = "label", label = errorMsg, x = 0, y = 0 } }, { '好的，我现在就去打开视频' }) _G.error(errorMsg) end local function trim(to_trim) --[[ 这里必须用一个中间变量，不然会返回多个参数 ]] local result = _G.string.gsub(to_trim, "^%s+", ""):gsub("%s+$", "") return result end local function getSpecificVar(targetName) local level = 1 while _G.debug.getinfo(level) ~= nil do local i = 1 while true do local name, value = _G.debug.getlocal(level, i) if name == targetName then return value elseif name == nil then break end i = i + 1 end level = level + 1 end return nil end --[[ 通过 subs 对象获取当前字幕内容（但是获取不到 Format:，不过 accupos（libass）兼容） ]] local function getSubtitleContent(currSubs) local assFile = {} local hasSection = {} local playResX = 0 local playResY = 0 for i = 1, #currSubs do local sub = currSubs[i] if sub.key == 'PlayResX' then playResX = _G.tonumber(sub.value) elseif sub.key == 'PlayResY' then playResY = _G.tonumber(sub.value) end local section = sub.section if not hasSection[section] then _G.table.insert(assFile, '\n' .. section) hasSection[section] = true end local toInsert = sub.raw --[[ 把符合 kara-templater 匹配模板条件的 Comment 替换成 Dialogue ]] if sub.class == "dialogue" and sub.comment == true and sub.effect:match("[Kk]araoke") then toInsert = _G.string.gsub(toInsert, 'Comment: ', 'Dialogue: ', 1) end if sub.class == "dialogue" and trim(sub.text) == '' then toInsert = '' end _G.table.insert(assFile, trim(toInsert)) end if playResX == 0 or playResY == 0 then playResX, playResY = _G.aegisub.video_size() end return _G.table.concat(assFile, '\n'), playResX, playResY end local function getPosWithAccupos(assText, playResX, playResY) local ffi = _G.require('ffi') ffi.cdef([[ typedef struct { double pos_x, pos_y; const char *raw; int32_t width, height; int32_t is_positioned; } Accupos_Dialogue; typedef struct Accupos_LibassPrivate Accupos_LibassPrivate; typedef struct { Accupos_LibassPrivate *libass; Accupos_Dialogue *dialogues; int32_t n_dialogues; } Accupos_Library; Accupos_Library *accupos_init( int32_t width, int32_t height, const char *ass_data, int32_t ass_data_len ); void accupos_done(Accupos_Library *lib); ]]) local dll = ffi.load(_G.jit.arch == 'x64' and 'accupos64' or 'accupos32') local accupos = dll.accupos_init(playResX, playResY, assText, #assText) if accupos == nil then _G.error('\n代码出错：accupos_init 返回了 NULL，这表明初始化出错。') end local result = {} local dialogue_num = accupos.n_dialogues for i = 1, dialogue_num do if accupos.dialogues[i - 1].raw == nil then _G.error(_G.string.format('\n代码出错：accupos->dialogues[%d].raw 为 NULL，这表明 accupos 内部出错了。', i - 1)) end local d = { raw = ffi.string(accupos.dialogues[i - 1].raw), pos_x = accupos.dialogues[i - 1].pos_x, pos_y = accupos.dialogues[i - 1].pos_y, width = accupos.dialogues[i - 1].width, height = accupos.dialogues[i - 1].height, is_positioned = (accupos.dialogues[i - 1].is_positioned ~= 0), } if d.width > 0 and d.height > 0 then _G.table.insert(result, d) end end dll.accupos_done(accupos) return result end local function startsWith(str, pattern) return str:sub(1, #pattern) == pattern end local currSubs = getSpecificVar('subs') local assText, playResX, playResY = getSubtitleContent(currSubs) local positions = getPosWithAccupos(assText, playResX, playResY) local globalCounter = 1 local lastIndex = -1 function getPos(index) --[[ 这里必须用 text_stripped 做判断，因为 libass 也不会输出纯注释行（例：只有一个 {?} 的行） ]] if trim(orgline.text_stripped) == '' then return '' end if lastIndex ~= index then local lineRaw = trim(orgline.raw) if startsWith(lineRaw, 'Comment: ') then lineRaw = _G.string.gsub(lineRaw, 'Comment: ', 'Dialogue: ', 1) end while positions[globalCounter].raw ~= lineRaw do globalCounter = globalCounter + 1 if globalCounter > #positions then _G.error(_G.string.format('\n代码出错：重建的字幕文件与实际字幕不匹配。\n当前行为 <%s>，在第 %d 行后找不到该行。\n', orgline.raw, lastIndex)) end end lastIndex = index end local p = positions[globalCounter] if p.is_positioned then return '' end local pos_x = _G.string.format('%.2f', p.pos_x):gsub("%.?0+$", "") local pos_y = _G.string.format('%.2f', p.pos_y):gsub("%.?0+$", "") return _G.string.format([[\pos(%d,%d)]], pos_x, pos_y) end function resetMargin() line.margin_l = 0 line.margin_r = 0 line.margin_t = 0 line.margin_b = 0 return '' end
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,template line all keeptags,{!getPos(line.i)!\1a&HFF&\3a&HFF&}!restyle(GLOBAL_SHADOW_STYLE)!!resetMargin()!!relayer(0)!
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,template line all keeptags,{!getPos(line.i)!\bord!line.styleref.outline + EB_WIDTH!\shad!line.styleref.shadow - EB_WIDTH!\3c!_G.interpolate_color(EB_BLEND_WHITE,'&HFFFFFF&',line.styleref.color2)!\3a&H!_G.string.format('%02X',(1-EB_OPACITY)*255)!&\1a&HFF&}!resetMargin()!!relayer(1)!
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,template line all keeptags,{!getPos(line.i)!\shad0}!resetMargin()!!relayer(2)!
 Comment: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,使用说明：,使用方法：
 Comment: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,使用说明：,     1. 把 accupos64.dll 复制到你的 Aegisub.exe 所在位置
 Comment: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,使用说明：,     2. 新建一个字幕文件
@@ -91,78 +117,78 @@ Comment: 0,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,karaoke,{\pos(214.66,826)}Staff
 Comment: 0,0:00:00.00,0:00:05.00,个活-鲤鱼,,0,0,0,karaoke,{\pos(214.66,940)}个活-鲤鱼
 Comment: 0,0:00:00.00,0:00:05.00,星-全员,,0,0,0,karaoke,{\pos(214.66,1048)}星-全员
 Comment: 0,0:00:05.00,0:00:08.00,Default,,0,0,0,,-----------------------------
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,129)\1a&HFF&\3a&HFF&}{\pos(1445.33,129.33)}星-千-Nako
-Dialogue: 1,0:00:00.00,0:00:05.00,星-千-Nako,,0,0,0,fx,{\pos(1445,129)\bord11.5\shad5.5\3c&HA87AEE&\3a&H00&\1a&HFF&}{\pos(1445.33,129.33)}星-千-Nako
-Dialogue: 2,0:00:00.00,0:00:05.00,星-千-Nako,,0,0,0,fx,{\pos(1445,129)\shad0}{\pos(1445.33,129.33)}星-千-Nako
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,249)\1a&HFF&\3a&HFF&}{\pos(1445.33,249.33)}星-可可-鲤鱼
-Dialogue: 1,0:00:00.00,0:00:05.00,星-可可-鲤鱼,,0,0,0,fx,{\pos(1445,249)\bord11.5\shad5.5\3c&HB3BC39&\3a&H00&\1a&HFF&}{\pos(1445.33,249.33)}星-可可-鲤鱼
-Dialogue: 2,0:00:00.00,0:00:05.00,星-可可-鲤鱼,,0,0,0,fx,{\pos(1445,249)\shad0}{\pos(1445.33,249.33)}星-可可-鲤鱼
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,375)\1a&HFF&\3a&HFF&}{\pos(1445.33,375.33)}星-堇-Pay
-Dialogue: 1,0:00:00.00,0:00:05.00,星-堇-Pay,,0,0,0,fx,{\pos(1445,375)\bord11.5\shad5.5\3c&H4BBB70&\3a&H00&\1a&HFF&}{\pos(1445.33,375.33)}星-堇-Pay
-Dialogue: 2,0:00:00.00,0:00:05.00,星-堇-Pay,,0,0,0,fx,{\pos(1445,375)\shad0}{\pos(1445.33,375.33)}星-堇-Pay
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,485)\1a&HFF&\3a&HFF&}{\pos(1445.33,485.33)}星-恋-渚
-Dialogue: 1,0:00:00.00,0:00:05.00,星-恋-渚,,0,0,0,fx,{\pos(1445,485)\bord11.5\shad5.5\3c&HC4574D&\3a&H00&\1a&HFF&}{\pos(1445.33,485.33)}星-恋-渚
-Dialogue: 2,0:00:00.00,0:00:05.00,星-恋-渚,,0,0,0,fx,{\pos(1445,485)\shad0}{\pos(1445.33,485.33)}星-恋-渚
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,591)\1a&HFF&\3a&HFF&}{\pos(1445.33,591.33)}星-樱小路希奈子-铃原希实
-Dialogue: 1,0:00:00.00,0:00:05.00,星-樱小路希奈子-铃原希实,,0,0,0,fx,{\pos(1445,591)\bord11.5\shad5.5\3c&H3EAACD&\3a&H00&\1a&HFF&}{\pos(1445.33,591.33)}星-樱小路希奈子-铃原希实
-Dialogue: 2,0:00:00.00,0:00:05.00,星-樱小路希奈子-铃原希实,,0,0,0,fx,{\pos(1445,591)\shad0}{\pos(1445.33,591.33)}星-樱小路希奈子-铃原希实
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,705)\1a&HFF&\3a&HFF&}{\pos(1445.33,705.33)}星-米女芽衣-薮岛朱音
-Dialogue: 1,0:00:00.00,0:00:05.00,星-米女芽衣-薮岛朱音,,0,0,0,fx,{\pos(1445,705)\bord11.5\shad5.5\3c&H5D5DFF&\3a&H00&\1a&HFF&}{\pos(1445.33,705.33)}星-米女芽衣-薮岛朱音
-Dialogue: 2,0:00:00.00,0:00:05.00,星-米女芽衣-薮岛朱音,,0,0,0,fx,{\pos(1445,705)\shad0}{\pos(1445.33,705.33)}星-米女芽衣-薮岛朱音
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,813)\1a&HFF&\3a&HFF&}{\pos(1445.33,813.33)}星-若菜四季-大熊和奏
-Dialogue: 1,0:00:00.00,0:00:05.00,星-若菜四季-大熊和奏,,0,0,0,fx,{\pos(1445,813)\bord11.5\shad5.5\3c&H9BC243&\3a&H00&\1a&HFF&}{\pos(1445.33,813.33)}星-若菜四季-大熊和奏
-Dialogue: 2,0:00:00.00,0:00:05.00,星-若菜四季-大熊和奏,,0,0,0,fx,{\pos(1445,813)\shad0}{\pos(1445.33,813.33)}星-若菜四季-大熊和奏
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,923)\1a&HFF&\3a&HFF&}{\pos(1445.33,923.33)}星-香音-Sayu
-Dialogue: 1,0:00:00.00,0:00:05.00,星-香音-Sayu,,0,0,0,fx,{\pos(1445,923)\bord11.5\shad4.6\3c&H438FFF&\3a&H00&\1a&HFF&}{\pos(1445.33,923.33)}星-香音-Sayu
-Dialogue: 2,0:00:00.00,0:00:05.00,星-香音-Sayu,,0,0,0,fx,{\pos(1445,923)\shad0}{\pos(1445.33,923.33)}星-香音-Sayu
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(1445,1039)\1a&HFF&\3a&HFF&}{\pos(1445.33,1039.33)}星-鬼塚夏美-绘森彩
-Dialogue: 1,0:00:00.00,0:00:05.00,星-鬼塚夏美-绘森彩,,0,0,0,fx,{\pos(1445,1039)\bord11.5\shad5.5\3c&HCB6BFA&\3a&H00&\1a&HFF&}{\pos(1445.33,1039.33)}星-鬼塚夏美-绘森彩
-Dialogue: 2,0:00:00.00,0:00:05.00,星-鬼塚夏美-绘森彩,,0,0,0,fx,{\pos(1445,1039)\shad0}{\pos(1445.33,1039.33)}星-鬼塚夏美-绘森彩
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,128)\1a&HFF&\3a&HFF&}{\pos(700.67,128)}虹-中须霞-麻油鸡
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-中须霞-麻油鸡,,0,0,0,fx,{\pos(700,128)\bord11.5\shad5.5\3c&H53C3E8&\3a&H00&\1a&HFF&}{\pos(700.67,128)}虹-中须霞-麻油鸡
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-中须霞-麻油鸡,,0,0,0,fx,{\pos(700,128)\shad0}{\pos(700.67,128)}虹-中须霞-麻油鸡
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,248)\1a&HFF&\3a&HFF&}{\pos(700.67,248)}虹-侑-妃喵
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-侑-妃喵,,0,0,0,fx,{\pos(700,248)\bord11.5\shad5.5\3c&H5F5F5F&\3a&H00&\1a&HFF&}{\pos(700.67,248)}虹-侑-妃喵
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-侑-妃喵,,0,0,0,fx,{\pos(700,248)\shad0}{\pos(700.67,248)}虹-侑-妃喵
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(732,374)\1a&HFF&\3a&HFF&}{\pos(732.67,374)}虹-果林-miyu碳
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-果林-miyu碳,,0,0,0,fx,{\pos(732,374)\bord11.5\shad5.5\3c&HD17E6C&\3a&H00&\1a&HFF&}{\pos(732.67,374)}虹-果林-miyu碳
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-果林-miyu碳,,0,0,0,fx,{\pos(732,374)\shad0}{\pos(732.67,374)}虹-果林-miyu碳
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(758,484)\1a&HFF&\3a&HFF&}{\pos(758.67,484)}虹-萌P
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-栞子-萌P,,0,0,0,fx,{\pos(758,484)\bord11.5\shad5.5\3c&H8BB74A&\3a&H00&\1a&HFF&}{\pos(758.67,484)}虹-萌P
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-栞子-萌P,,0,0,0,fx,{\pos(758,484)\shad0}{\pos(758.67,484)}虹-萌P
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,590)\1a&HFF&\3a&HFF&}{\pos(700.67,590)}虹-步梦-阿兔嘭
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-步梦-阿兔嘭,,0,0,0,fx,{\pos(700,590)\bord11.5\shad5.5\3c&HA175FC&\3a&H00&\1a&HFF&}{\pos(700.67,590)}虹-步梦-阿兔嘭
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-步梦-阿兔嘭,,0,0,0,fx,{\pos(700,590)\shad0}{\pos(700.67,590)}虹-步梦-阿兔嘭
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,704)\1a&HFF&\3a&HFF&}{\pos(700.67,704)}虹-爱-奈酱
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,fx,{\pos(700,704)\bord11.5\shad5.5\3c&H3379FF&\3a&H00&\1a&HFF&}{\pos(700.67,704)}虹-爱-奈酱
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,fx,{\pos(700,704)\shad0}{\pos(700.67,704)}虹-爱-奈酱
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,812)\1a&HFF&\3a&HFF&}{\pos(700.67,812)}虹-璃奈-切咪
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-璃奈-切咪,,0,0,0,fx,{\pos(700,812)\bord11.5\shad5.5\3c&HC1ABA0&\3a&H00&\1a&HFF&}{\pos(700.67,812)}虹-璃奈-切咪
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-璃奈-切咪,,0,0,0,fx,{\pos(700,812)\shad0}{\pos(700.67,812)}虹-璃奈-切咪
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,922)\1a&HFF&\3a&HFF&}{\pos(700.67,922)}虹-米娅-秀秀
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-米娅-秀秀,,0,0,0,fx,{\pos(700,922)\bord11.5\shad5.5\3c&H8094A4&\3a&H00&\1a&HFF&}{\pos(700.67,922)}虹-米娅-秀秀
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-米娅-秀秀,,0,0,0,fx,{\pos(700,922)\shad0}{\pos(700.67,922)}虹-米娅-秀秀
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(700,1038)\1a&HFF&\3a&HFF&}{\pos(700.67,1038)}虹-艾玛-麻圆
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-艾玛-麻圆,,0,0,0,fx,{\pos(700,1038)\bord11.5\shad5.5\3c&H70B785&\3a&H00&\1a&HFF&}{\pos(700.67,1038)}虹-艾玛-麻圆
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-艾玛-麻圆,,0,0,0,fx,{\pos(700,1038)\shad0}{\pos(700.67,1038)}虹-艾玛-麻圆
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(214,126)\1a&HFF&\3a&HFF&}{\pos(214.66,126)}虹-146
-Dialogue: 1,0:00:00.00,0:00:05.00,虹-雫-146,,0,0,0,fx,{\pos(214,126)\bord11.5\shad5.5\3c&HF9B339&\3a&H00&\1a&HFF&}{\pos(214.66,126)}虹-146
-Dialogue: 2,0:00:00.00,0:00:05.00,虹-雫-146,,0,0,0,fx,{\pos(214,126)\shad0}{\pos(214.66,126)}虹-146
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(214,610)\1a&HFF&\3a&HFF&}{\pos(214.66,610)}水-爱喵
-Dialogue: 1,0:00:00.00,0:00:05.00,水-爱喵,,0,0,0,fx,{\pos(214,610)\bord11.5\shad5.5\3c&HE659B7&\3a&H00&\1a&HFF&}{\pos(214.66,610)}水-爱喵
-Dialogue: 2,0:00:00.00,0:00:05.00,水-爱喵,,0,0,0,fx,{\pos(214,610)\shad0}{\pos(214.66,610)}水-爱喵
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(272,484)\1a&HFF&\3a&HFF&}{\pos(272.66,484)}水-渡边曜-朱夏
-Dialogue: 1,0:00:00.00,0:00:05.00,水-渡边曜-朱夏,,0,0,0,fx,{\pos(272,484)\bord11.5\shad5.5\3c&HD1AC50&\3a&H00&\1a&HFF&}{\pos(272.66,484)}水-渡边曜-朱夏
-Dialogue: 2,0:00:00.00,0:00:05.00,水-渡边曜-朱夏,,0,0,0,fx,{\pos(272,484)\shad0}{\pos(272.66,484)}水-渡边曜-朱夏
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(214,720)\1a&HFF&\3a&HFF&}{\pos(214.66,720)}Staff
-Dialogue: 1,0:00:00.00,0:00:05.00,Staff,,0,0,0,fx,{\pos(214,720)\bord11.5\shad5.5\3c&H5BA7FD&\3a&H00&\1a&HFF&}{\pos(214.66,720)}Staff
-Dialogue: 2,0:00:00.00,0:00:05.00,Staff,,0,0,0,fx,{\pos(214,720)\shad0}{\pos(214.66,720)}Staff
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(214,826)\1a&HFF&\3a&HFF&}{\pos(214.66,826)}Staff黑
-Dialogue: 1,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,fx,{\pos(214,826)\bord11.5\shad5.5\3c&H6E6E6E&\3a&H00&\1a&HFF&}{\pos(214.66,826)}Staff黑
-Dialogue: 2,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,fx,{\pos(214,826)\shad0}{\pos(214.66,826)}Staff黑
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(214,940)\1a&HFF&\3a&HFF&}{\pos(214.66,940)}个活-鲤鱼
-Dialogue: 1,0:00:00.00,0:00:05.00,个活-鲤鱼,,0,0,0,fx,{\pos(214,940)\bord11.5\shad5.5\3c&HA36DE8&\3a&H00&\1a&HFF&}{\pos(214.66,940)}个活-鲤鱼
-Dialogue: 2,0:00:00.00,0:00:05.00,个活-鲤鱼,,0,0,0,fx,{\pos(214,940)\shad0}{\pos(214.66,940)}个活-鲤鱼
-Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\pos(214,1048)\1a&HFF&\3a&HFF&}{\pos(214.66,1048)}星-全员
-Dialogue: 1,0:00:00.00,0:00:05.00,星-全员,,0,0,0,fx,{\pos(214,1048)\bord11.5\shad5.5\3c&HA256AB&\3a&H00&\1a&HFF&}{\pos(214.66,1048)}星-全员
-Dialogue: 2,0:00:00.00,0:00:05.00,星-全员,,0,0,0,fx,{\pos(214,1048)\shad0}{\pos(214.66,1048)}星-全员
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,129.33)}星-千-Nako
+Dialogue: 1,0:00:00.00,0:00:05.00,星-千-Nako,,0,0,0,fx,{\bord11.5\shad5.5\3c&HA87AEE&\3a&H00&\1a&HFF&}{\pos(1445.33,129.33)}星-千-Nako
+Dialogue: 2,0:00:00.00,0:00:05.00,星-千-Nako,,0,0,0,fx,{\shad0}{\pos(1445.33,129.33)}星-千-Nako
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,249.33)}星-可可-鲤鱼
+Dialogue: 1,0:00:00.00,0:00:05.00,星-可可-鲤鱼,,0,0,0,fx,{\bord11.5\shad5.5\3c&HB3BC39&\3a&H00&\1a&HFF&}{\pos(1445.33,249.33)}星-可可-鲤鱼
+Dialogue: 2,0:00:00.00,0:00:05.00,星-可可-鲤鱼,,0,0,0,fx,{\shad0}{\pos(1445.33,249.33)}星-可可-鲤鱼
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,375.33)}星-堇-Pay
+Dialogue: 1,0:00:00.00,0:00:05.00,星-堇-Pay,,0,0,0,fx,{\bord11.5\shad5.5\3c&H4BBB70&\3a&H00&\1a&HFF&}{\pos(1445.33,375.33)}星-堇-Pay
+Dialogue: 2,0:00:00.00,0:00:05.00,星-堇-Pay,,0,0,0,fx,{\shad0}{\pos(1445.33,375.33)}星-堇-Pay
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,485.33)}星-恋-渚
+Dialogue: 1,0:00:00.00,0:00:05.00,星-恋-渚,,0,0,0,fx,{\bord11.5\shad5.5\3c&HC4574D&\3a&H00&\1a&HFF&}{\pos(1445.33,485.33)}星-恋-渚
+Dialogue: 2,0:00:00.00,0:00:05.00,星-恋-渚,,0,0,0,fx,{\shad0}{\pos(1445.33,485.33)}星-恋-渚
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,591.33)}星-樱小路希奈子-铃原希实
+Dialogue: 1,0:00:00.00,0:00:05.00,星-樱小路希奈子-铃原希实,,0,0,0,fx,{\bord11.5\shad5.5\3c&H3EAACD&\3a&H00&\1a&HFF&}{\pos(1445.33,591.33)}星-樱小路希奈子-铃原希实
+Dialogue: 2,0:00:00.00,0:00:05.00,星-樱小路希奈子-铃原希实,,0,0,0,fx,{\shad0}{\pos(1445.33,591.33)}星-樱小路希奈子-铃原希实
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,705.33)}星-米女芽衣-薮岛朱音
+Dialogue: 1,0:00:00.00,0:00:05.00,星-米女芽衣-薮岛朱音,,0,0,0,fx,{\bord11.5\shad5.5\3c&H5D5DFF&\3a&H00&\1a&HFF&}{\pos(1445.33,705.33)}星-米女芽衣-薮岛朱音
+Dialogue: 2,0:00:00.00,0:00:05.00,星-米女芽衣-薮岛朱音,,0,0,0,fx,{\shad0}{\pos(1445.33,705.33)}星-米女芽衣-薮岛朱音
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,813.33)}星-若菜四季-大熊和奏
+Dialogue: 1,0:00:00.00,0:00:05.00,星-若菜四季-大熊和奏,,0,0,0,fx,{\bord11.5\shad5.5\3c&H9BC243&\3a&H00&\1a&HFF&}{\pos(1445.33,813.33)}星-若菜四季-大熊和奏
+Dialogue: 2,0:00:00.00,0:00:05.00,星-若菜四季-大熊和奏,,0,0,0,fx,{\shad0}{\pos(1445.33,813.33)}星-若菜四季-大熊和奏
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,923.33)}星-香音-Sayu
+Dialogue: 1,0:00:00.00,0:00:05.00,星-香音-Sayu,,0,0,0,fx,{\bord11.5\shad4.6\3c&H438FFF&\3a&H00&\1a&HFF&}{\pos(1445.33,923.33)}星-香音-Sayu
+Dialogue: 2,0:00:00.00,0:00:05.00,星-香音-Sayu,,0,0,0,fx,{\shad0}{\pos(1445.33,923.33)}星-香音-Sayu
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(1445.33,1039.33)}星-鬼塚夏美-绘森彩
+Dialogue: 1,0:00:00.00,0:00:05.00,星-鬼塚夏美-绘森彩,,0,0,0,fx,{\bord11.5\shad5.5\3c&HCB6BFA&\3a&H00&\1a&HFF&}{\pos(1445.33,1039.33)}星-鬼塚夏美-绘森彩
+Dialogue: 2,0:00:00.00,0:00:05.00,星-鬼塚夏美-绘森彩,,0,0,0,fx,{\shad0}{\pos(1445.33,1039.33)}星-鬼塚夏美-绘森彩
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,128)}虹-中须霞-麻油鸡
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-中须霞-麻油鸡,,0,0,0,fx,{\bord11.5\shad5.5\3c&H53C3E8&\3a&H00&\1a&HFF&}{\pos(700.67,128)}虹-中须霞-麻油鸡
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-中须霞-麻油鸡,,0,0,0,fx,{\shad0}{\pos(700.67,128)}虹-中须霞-麻油鸡
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,248)}虹-侑-妃喵
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-侑-妃喵,,0,0,0,fx,{\bord11.5\shad5.5\3c&H5F5F5F&\3a&H00&\1a&HFF&}{\pos(700.67,248)}虹-侑-妃喵
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-侑-妃喵,,0,0,0,fx,{\shad0}{\pos(700.67,248)}虹-侑-妃喵
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(732.67,374)}虹-果林-miyu碳
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-果林-miyu碳,,0,0,0,fx,{\bord11.5\shad5.5\3c&HD17E6C&\3a&H00&\1a&HFF&}{\pos(732.67,374)}虹-果林-miyu碳
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-果林-miyu碳,,0,0,0,fx,{\shad0}{\pos(732.67,374)}虹-果林-miyu碳
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(758.67,484)}虹-萌P
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-栞子-萌P,,0,0,0,fx,{\bord11.5\shad5.5\3c&H8BB74A&\3a&H00&\1a&HFF&}{\pos(758.67,484)}虹-萌P
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-栞子-萌P,,0,0,0,fx,{\shad0}{\pos(758.67,484)}虹-萌P
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,590)}虹-步梦-阿兔嘭
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-步梦-阿兔嘭,,0,0,0,fx,{\bord11.5\shad5.5\3c&HA175FC&\3a&H00&\1a&HFF&}{\pos(700.67,590)}虹-步梦-阿兔嘭
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-步梦-阿兔嘭,,0,0,0,fx,{\shad0}{\pos(700.67,590)}虹-步梦-阿兔嘭
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,704)}虹-爱-奈酱
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,fx,{\bord11.5\shad5.5\3c&H3379FF&\3a&H00&\1a&HFF&}{\pos(700.67,704)}虹-爱-奈酱
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-爱-奈酱,,0,0,0,fx,{\shad0}{\pos(700.67,704)}虹-爱-奈酱
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,812)}虹-璃奈-切咪
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-璃奈-切咪,,0,0,0,fx,{\bord11.5\shad5.5\3c&HC1ABA0&\3a&H00&\1a&HFF&}{\pos(700.67,812)}虹-璃奈-切咪
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-璃奈-切咪,,0,0,0,fx,{\shad0}{\pos(700.67,812)}虹-璃奈-切咪
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,922)}虹-米娅-秀秀
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-米娅-秀秀,,0,0,0,fx,{\bord11.5\shad5.5\3c&H8094A4&\3a&H00&\1a&HFF&}{\pos(700.67,922)}虹-米娅-秀秀
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-米娅-秀秀,,0,0,0,fx,{\shad0}{\pos(700.67,922)}虹-米娅-秀秀
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(700.67,1038)}虹-艾玛-麻圆
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-艾玛-麻圆,,0,0,0,fx,{\bord11.5\shad5.5\3c&H70B785&\3a&H00&\1a&HFF&}{\pos(700.67,1038)}虹-艾玛-麻圆
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-艾玛-麻圆,,0,0,0,fx,{\shad0}{\pos(700.67,1038)}虹-艾玛-麻圆
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(214.66,126)}虹-146
+Dialogue: 1,0:00:00.00,0:00:05.00,虹-雫-146,,0,0,0,fx,{\bord11.5\shad5.5\3c&HF9B339&\3a&H00&\1a&HFF&}{\pos(214.66,126)}虹-146
+Dialogue: 2,0:00:00.00,0:00:05.00,虹-雫-146,,0,0,0,fx,{\shad0}{\pos(214.66,126)}虹-146
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(214.66,610)}水-爱喵
+Dialogue: 1,0:00:00.00,0:00:05.00,水-爱喵,,0,0,0,fx,{\bord11.5\shad5.5\3c&HE659B7&\3a&H00&\1a&HFF&}{\pos(214.66,610)}水-爱喵
+Dialogue: 2,0:00:00.00,0:00:05.00,水-爱喵,,0,0,0,fx,{\shad0}{\pos(214.66,610)}水-爱喵
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(272.66,484)}水-渡边曜-朱夏
+Dialogue: 1,0:00:00.00,0:00:05.00,水-渡边曜-朱夏,,0,0,0,fx,{\bord11.5\shad5.5\3c&HD1AC50&\3a&H00&\1a&HFF&}{\pos(272.66,484)}水-渡边曜-朱夏
+Dialogue: 2,0:00:00.00,0:00:05.00,水-渡边曜-朱夏,,0,0,0,fx,{\shad0}{\pos(272.66,484)}水-渡边曜-朱夏
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(214.66,720)}Staff
+Dialogue: 1,0:00:00.00,0:00:05.00,Staff,,0,0,0,fx,{\bord11.5\shad5.5\3c&H5BA7FD&\3a&H00&\1a&HFF&}{\pos(214.66,720)}Staff
+Dialogue: 2,0:00:00.00,0:00:05.00,Staff,,0,0,0,fx,{\shad0}{\pos(214.66,720)}Staff
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(214.66,826)}Staff黑
+Dialogue: 1,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,fx,{\bord11.5\shad5.5\3c&H6E6E6E&\3a&H00&\1a&HFF&}{\pos(214.66,826)}Staff黑
+Dialogue: 2,0:00:00.00,0:00:05.00,Staff黑,,0,0,0,fx,{\shad0}{\pos(214.66,826)}Staff黑
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(214.66,940)}个活-鲤鱼
+Dialogue: 1,0:00:00.00,0:00:05.00,个活-鲤鱼,,0,0,0,fx,{\bord11.5\shad5.5\3c&HA36DE8&\3a&H00&\1a&HFF&}{\pos(214.66,940)}个活-鲤鱼
+Dialogue: 2,0:00:00.00,0:00:05.00,个活-鲤鱼,,0,0,0,fx,{\shad0}{\pos(214.66,940)}个活-鲤鱼
+Dialogue: 0,0:00:00.00,0:00:05.00,全局阴影,,0,0,0,fx,{\1a&HFF&\3a&HFF&}{\pos(214.66,1048)}星-全员
+Dialogue: 1,0:00:00.00,0:00:05.00,星-全员,,0,0,0,fx,{\bord11.5\shad5.5\3c&HA256AB&\3a&H00&\1a&HFF&}{\pos(214.66,1048)}星-全员
+Dialogue: 2,0:00:00.00,0:00:05.00,星-全员,,0,0,0,fx,{\shad0}{\pos(214.66,1048)}星-全员
