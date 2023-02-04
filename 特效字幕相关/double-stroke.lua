@@ -146,7 +146,7 @@ local function getLineToSlotTable(allLines)
     return lineToSlot
 end
 
-function ipid.convertSlotToPos(lineToSlot)
+local function convertSlotToPos(lineToSlot)
     local theMeta = getSpecificVar('meta')
     local output = {}
 
@@ -163,4 +163,4 @@ function ipid.convertSlotToPos(lineToSlot)
     return output
 end
 
-linePos = ipid.convertSlotToPos(getLineToSlotTable(getAllDialogueLines()))
+linePos = convertSlotToPos(getLineToSlotTable(getAllDialogueLines()))
