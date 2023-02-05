@@ -66,8 +66,13 @@ local function getSubtitleContent(currSubs)
             toInsert = _G.string.gsub(toInsert, 'Comment: ', 'Dialogue: ', 1)
         end
 
-        if sub.class == "dialogue" and trim(sub.text) == '' then
-            toInsert = ''
+        if sub.class == "dialogue" then
+            if trim(sub.text) == '' then
+                toInsert = ''
+            end
+            if _G.aegisub.frame_from_ms(sub.start_time) >= _G.aegisub.frame_from_ms(sub.end_time) then
+                toInsert = ''
+            end
         end
 
         _G.table.insert(assFile, trim(toInsert))
@@ -89,20 +94,20 @@ local function getPosWithAccupos(assText, playResX, playResY)
             int32_t width, height;
             int32_t is_positioned;
         } Accupos_Dialogue;
-
+        
         typedef struct Accupos_LibassPrivate Accupos_LibassPrivate;
-
+        
         typedef struct {
             Accupos_LibassPrivate *libass;
             Accupos_Dialogue *dialogues;
             int32_t n_dialogues;
         } Accupos_Library;
-
+        
         Accupos_Library *accupos_init(
             int32_t width, int32_t height,
             const char *ass_data, int32_t ass_data_len
         );
-
+        
         void accupos_done(Accupos_Library *lib);
     ]])
     local dll = ffi.load(_G.jit.arch == 'x64' and 'accupos64' or 'accupos32')
@@ -114,19 +119,21 @@ local function getPosWithAccupos(assText, playResX, playResY)
 
     local result = {}
 
-    local dialogue_num = accupos.n_dialogues
-    for i = 1, dialogue_num do
-        if accupos.dialogues[i - 1].raw == nil then
+    local dialogueNum = accupos.n_dialogues
+    for i = 1, dialogueNum do
+        local origD = accupos.dialogues[i - 1]
+
+        if origD.raw == nil then
             _G.error(_G.string.format('\n代码出错：accupos->dialogues[%d].raw 为 NULL，这表明 accupos 内部出错了。', i - 1))
         end
 
         local d = {
-            raw = ffi.string(accupos.dialogues[i - 1].raw),
-            pos_x = accupos.dialogues[i - 1].pos_x,
-            pos_y = accupos.dialogues[i - 1].pos_y,
-            width = accupos.dialogues[i - 1].width,
-            height = accupos.dialogues[i - 1].height,
-            is_positioned = (accupos.dialogues[i - 1].is_positioned ~= 0),
+            raw = ffi.string(origD.raw),
+            posX = origD.pos_x,
+            posY = origD.pos_y,
+            width = origD.width,
+            height = origD.height,
+            isPositioned = (origD.is_positioned ~= 0),
         }
 
         if d.width > 0 and d.height > 0 then
@@ -149,9 +156,12 @@ local positions = getPosWithAccupos(assText, playResX, playResY)
 local globalCounter = 1
 local lastIndex = -1
 
-function getPos(index)
+function findMatchingLine(index)
     --[[ 这里必须用 text_stripped 做判断，因为 libass 也不会输出纯注释行（例：只有一个 {?} 的行） ]]
     if trim(orgline.text_stripped) == '' then
+        return ''
+    end
+    if _G.aegisub.frame_from_ms(orgline.start_time) >= _G.aegisub.frame_from_ms(orgline.end_time) then
         return ''
     end
 
@@ -172,15 +182,23 @@ function getPos(index)
         lastIndex = index
     end
 
+    return ''
+end
+
+function getPos()
     local p = positions[globalCounter]
 
-    if p.is_positioned then
+    if p.isPositioned then
         return ''
     end
 
-    local pos_x = _G.string.format('%.2f', p.pos_x):gsub("%.?0+$", "")
-    local pos_y = _G.string.format('%.2f', p.pos_y):gsub("%.?0+$", "")
-    return _G.string.format([[\pos(%d,%d)]], pos_x, pos_y)
+    local posX = _G.string.format('%.2f', p.posX):gsub("%.?0+$", "")
+    local posY = _G.string.format('%.2f', p.posY):gsub("%.?0+$", "")
+    return _G.string.format([[\pos(%d,%d)]], posX, posY)
+end
+
+function getLine()
+    return orgline.text
 end
 
 function resetMargin()
@@ -193,16 +211,18 @@ function resetMargin()
 end
 
 function matchShadowToCurrentStyle()
+    local st = getSpecificVar('styles')
+
     --[[ TODO: 解析 \bord 并兼容 ]]
-    local an = line.styleref.align ~= styles[GLOBAL_SHADOW_STYLE].align and '\\an' .. line.styleref.align or ''
-    local fs = line.styleref.fontsize ~= styles[GLOBAL_SHADOW_STYLE].fontsize and '\\fs' .. line.styleref.fontsize or ''
-    local fn = line.styleref.fontname ~= styles[GLOBAL_SHADOW_STYLE].fontname and '\\fn' .. line.styleref.fontname or ''
-    local fscx = line.styleref.scale_x ~= styles[GLOBAL_SHADOW_STYLE].scale_x and '\\fscx' .. line.styleref.scale_x or ''
-    local fscy = line.styleref.scale_y ~= styles[GLOBAL_SHADOW_STYLE].scale_y and '\\fscy' .. line.styleref.scale_y or ''
-    local fsp = line.styleref.spacing ~= styles[GLOBAL_SHADOW_STYLE].spacing and '\\fsp' .. line.styleref.spacing or ''
-    local b = line.styleref.bold ~= styles[GLOBAL_SHADOW_STYLE].bold and '\\b1' or ''
-    local i = line.styleref.italic ~= styles[GLOBAL_SHADOW_STYLE].italic and '\\i1' or ''
-    local u = line.styleref.underline ~= styles[GLOBAL_SHADOW_STYLE].underline and '\\u1' or ''
+    local an = line.styleref.align ~= st[GLOBAL_SHADOW_STYLE].align and '\\an' .. line.styleref.align or ''
+    local fs = line.styleref.fontsize ~= st[GLOBAL_SHADOW_STYLE].fontsize and '\\fs' .. line.styleref.fontsize or ''
+    local fn = line.styleref.fontname ~= st[GLOBAL_SHADOW_STYLE].fontname and '\\fn' .. line.styleref.fontname or ''
+    local fscx = line.styleref.scale_x ~= st[GLOBAL_SHADOW_STYLE].scale_x and '\\fscx' .. line.styleref.scale_x or ''
+    local fscy = line.styleref.scale_y ~= st[GLOBAL_SHADOW_STYLE].scale_y and '\\fscy' .. line.styleref.scale_y or ''
+    local fsp = line.styleref.spacing ~= st[GLOBAL_SHADOW_STYLE].spacing and '\\fsp' .. line.styleref.spacing or ''
+    local b = line.styleref.bold ~= st[GLOBAL_SHADOW_STYLE].bold and '\\b1' or ''
+    local i = line.styleref.italic ~= st[GLOBAL_SHADOW_STYLE].italic and '\\i1' or ''
+    local u = line.styleref.underline ~= st[GLOBAL_SHADOW_STYLE].underline and '\\u1' or ''
 
     return an .. fs .. fn .. fscx .. fscy .. fsp .. b .. i .. u
 end
