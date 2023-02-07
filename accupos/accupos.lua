@@ -1,14 +1,17 @@
-if _G.aegisub.frame_from_ms(0) == nil then
-    local errorMsg = "【错误】\n\n本卡拉 OK 模板必须在打开视频之后才能运行。\n请打开一个视频后再运行本卡拉 OK 模板。\n如果没有视频，请点击「视频」→「使用空白视频」。\n"
+local function errMsg(text, okBtn)
     _G.aegisub.dialog.display({
-        { class = "label", label = errorMsg, x = 0, y = 0 }
-    }, { '好的，我现在就去打开视频' })
-    _G.error(errorMsg)
+        { class = 'label', label = text, x = 0, y = 0 }
+    }, { okBtn })
+    _G.error(text)
+end
+
+if _G.aegisub.frame_from_ms(0) == nil then
+    errMsg('【错误】\n\n本卡拉 OK 模板必须在打开视频之后才能运行。\n请打开一个视频后再运行本卡拉 OK 模板。\n如果没有视频，请点击「视频」→「使用空白视频」。\n', '好的，我现在就去打开视频')
 end
 
 local function trim(to_trim)
     --[[ 这里必须用一个中间变量，不然会返回多个参数 ]]
-    local result = _G.string.gsub(to_trim, "^%s+", ""):gsub("%s+$", "")
+    local result = _G.string.gsub(to_trim, '^%s+', ''):gsub('%s+$', '')
     return result
 end
 
@@ -62,11 +65,11 @@ local function getSubtitleContent(currSubs)
 
         local toInsert = sub.raw
         --[[ 把符合 kara-templater 匹配模板条件的 Comment 替换成 Dialogue ]]
-        if sub.class == "dialogue" and sub.comment == true and sub.effect:match("[Kk]araoke") then
+        if sub.class == 'dialogue' and sub.comment == true and sub.effect:match('[Kk]araoke') then
             toInsert = _G.string.gsub(toInsert, 'Comment: ', 'Dialogue: ', 1)
         end
 
-        if sub.class == "dialogue" then
+        if sub.class == 'dialogue' then
             if trim(sub.text) == '' then
                 toInsert = ''
             end
@@ -114,7 +117,7 @@ local function getPosWithAccupos(assText, playResX, playResY)
 
     local accupos = dll.accupos_init(playResX, playResY, assText, #assText)
     if accupos == nil then
-        _G.error('\n代码出错：accupos_init 返回了 NULL，这表明初始化出错。')
+        errMsg('\n代码出错：accupos_init 返回了 NULL，这表明初始化出错。', '好的，我会给开发者报告错误')
     end
 
     local result = {}
@@ -124,7 +127,7 @@ local function getPosWithAccupos(assText, playResX, playResY)
         local origD = accupos.dialogues[i - 1]
 
         if origD.raw == nil then
-            _G.error(_G.string.format('\n代码出错：accupos->dialogues[%d].raw 为 NULL，这表明 accupos 内部出错了。', i - 1))
+            errMsg(_G.string.format('【代码出错】\n\naccupos->dialogues[%d].raw 为 NULL，这表明 accupos 内部出错了。\n', i - 1), '好的，我会给开发者报告错误')
         end
 
         local d = {
@@ -175,7 +178,7 @@ function findMatchingLine(index)
             globalCounter = globalCounter + 1
 
             if globalCounter > #positions then
-                _G.error(_G.string.format('\n代码出错：重建的字幕文件与实际字幕不匹配。\n当前行为 <%s>，在第 %d 行后找不到该行。\n', orgline.raw, lastIndex))
+                _G.error(_G.string.format('【代码出错】\n\n重建的字幕文件与实际字幕不匹配。\n当前行为 <%s>，\n在第 %d 行后找不到该行。\n', orgline.raw, lastIndex))
             end
         end
 
@@ -192,8 +195,8 @@ function getPos()
         return ''
     end
 
-    local posX = _G.string.format('%.2f', p.posX):gsub("%.?0+$", "")
-    local posY = _G.string.format('%.2f', p.posY):gsub("%.?0+$", "")
+    local posX = _G.string.format('%.2f', p.posX):gsub('%.?0+$', '')
+    local posY = _G.string.format('%.2f', p.posY):gsub('%.?0+$', '')
     return _G.string.format([[\pos(%d,%d)]], posX, posY)
 end
 
@@ -212,6 +215,13 @@ end
 
 function matchShadowToCurrentStyle()
     local st = getSpecificVar('styles')
+    if GLOBAL_SHADOW_STYLE == nil then
+        errMsg('【错误】\n\nGLOBAL_SHADOW_STYLE 变量未设置，可能您复制特效代码的时候没有复制完全。\n', '好，我检查一下特效行复制对了没有')
+    end
+
+    if st[GLOBAL_SHADOW_STYLE] == nil then
+        errMsg(_G.string.format('【错误】\n\n你没有把「%s」样式导入进来。\n请您现在打开「样式管理器」，重新导入一遍样式，注意「%s」样式一定要导入。\n', GLOBAL_SHADOW_STYLE, GLOBAL_SHADOW_STYLE), '好，我这就去导入')
+    end
 
     --[[ TODO: 解析 \bord 并兼容 ]]
     local an = line.styleref.align ~= st[GLOBAL_SHADOW_STYLE].align and '\\an' .. line.styleref.align or ''
