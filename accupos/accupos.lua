@@ -200,10 +200,6 @@ function getPos()
     return _G.string.format([[\pos(%d,%d)]], posX, posY)
 end
 
-function getLine()
-    return orgline.text
-end
-
 function resetMargin()
     line.margin_l = 0
     line.margin_r = 0
@@ -213,26 +209,6 @@ function resetMargin()
     return ''
 end
 
-function matchShadowToCurrentStyle()
-    local st = getSpecificVar('styles')
-    if GLOBAL_SHADOW_STYLE == nil then
-        errMsg('【错误】\n\nGLOBAL_SHADOW_STYLE 变量未设置，可能您复制特效代码的时候没有复制完全。\n', '好，我检查一下特效行复制对了没有')
-    end
-
-    if st[GLOBAL_SHADOW_STYLE] == nil then
-        errMsg(_G.string.format('【错误】\n\n你没有把「%s」样式导入进来。\n请您现在打开「样式管理器」，重新导入一遍样式，注意「%s」样式一定要导入。\n', GLOBAL_SHADOW_STYLE, GLOBAL_SHADOW_STYLE), '好，我这就去导入')
-    end
-
-    --[[ TODO: 解析 \bord 并兼容 ]]
-    local an = line.styleref.align ~= st[GLOBAL_SHADOW_STYLE].align and '\\an' .. line.styleref.align or ''
-    local fs = line.styleref.fontsize ~= st[GLOBAL_SHADOW_STYLE].fontsize and '\\fs' .. line.styleref.fontsize or ''
-    local fn = line.styleref.fontname ~= st[GLOBAL_SHADOW_STYLE].fontname and '\\fn' .. line.styleref.fontname or ''
-    local fscx = line.styleref.scale_x ~= st[GLOBAL_SHADOW_STYLE].scale_x and '\\fscx' .. line.styleref.scale_x or ''
-    local fscy = line.styleref.scale_y ~= st[GLOBAL_SHADOW_STYLE].scale_y and '\\fscy' .. line.styleref.scale_y or ''
-    local fsp = line.styleref.spacing ~= st[GLOBAL_SHADOW_STYLE].spacing and '\\fsp' .. line.styleref.spacing or ''
-    local b = line.styleref.bold ~= st[GLOBAL_SHADOW_STYLE].bold and '\\b1' or ''
-    local i = line.styleref.italic ~= st[GLOBAL_SHADOW_STYLE].italic and '\\i1' or ''
-    local u = line.styleref.underline ~= st[GLOBAL_SHADOW_STYLE].underline and '\\u1' or ''
-
-    return an .. fs .. fn .. fscx .. fscy .. fsp .. b .. i .. u
+function removeBrackets(text)
+    return text:gsub('{', ''):gsub('}', '')
 end
