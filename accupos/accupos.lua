@@ -212,3 +212,59 @@ end
 function removeBrackets(text)
     return text:gsub('{', ''):gsub('}', '')
 end
+
+--[[ 通用的 ASS 解析器 ]]
+local function consumeAssNormalText(peek, next)
+    local textBuffer = {}
+    while peek() ~= '{' do
+        _G.table.insert(textBuffer, next())
+    end
+
+    return _G.table.concat(textBuffer)
+end
+
+local function consumeSingleAssTag(peek, next)
+    if peek() == '}' then
+
+    end
+end
+
+function parseAssText(text)
+    local i = 1
+
+    local function peek()
+        return text:sub(i, i)
+    end
+
+    local function next()
+        local c = peek()
+        i = i + 1
+        return c
+    end
+
+    local function eof()
+        return i > #text
+    end
+
+    local output = {}
+
+    while not eof() do
+        local normalText = consumeAssNormalText(peek, next)
+        _G.table.insert(output, { type = 'text', text = normalText })
+
+        if next() ~= '{' then
+            break
+        end
+
+        while peek() ~= '}' and not eof() do
+            local tagName, tagParams = consumeSingleAssTag(peek, next)
+            _G.table.insert(output, { type = 'text', name = tagName, params = tagParams })
+        end
+
+        if next() ~= '}' then
+            break
+        end
+    end
+
+    return output
+end
