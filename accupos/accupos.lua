@@ -97,20 +97,20 @@ local function getPosWithAccupos(assText, playResX, playResY)
             int32_t width, height;
             int32_t is_positioned;
         } Accupos_Dialogue;
-        
+
         typedef struct Accupos_LibassPrivate Accupos_LibassPrivate;
-        
+
         typedef struct {
             Accupos_LibassPrivate *libass;
             Accupos_Dialogue *dialogues;
             int32_t n_dialogues;
         } Accupos_Library;
-        
+
         Accupos_Library *accupos_init(
             int32_t width, int32_t height,
             const char *ass_data, int32_t ass_data_len
         );
-        
+
         void accupos_done(Accupos_Library *lib);
     ]])
     local dll = ffi.load(_G.jit.arch == 'x64' and 'accupos64' or 'accupos32')
@@ -154,6 +154,7 @@ local function startsWith(str, pattern)
 end
 
 local currSubs = getSpecificVar('subs')
+local currStyles = getSpecificVar('styles')
 local assText, playResX, playResY = getSubtitleContent(currSubs)
 local positions = getPosWithAccupos(assText, playResX, playResY)
 local globalCounter = 1
@@ -214,57 +215,317 @@ function removeBrackets(text)
 end
 
 --[[ 通用的 ASS 解析器 ]]
-local function consumeAssNormalText(peek, next)
-    local textBuffer = {}
-    while peek() ~= '{' do
-        _G.table.insert(textBuffer, next())
-    end
+local Parser = {
+    VALID_TAGS = { 'alpha', 'blur', 'bord', 'be', 'c', 'distort', 'fscx', 'fscy', 'fsvp', 'fax', 'fay',
+                   'frs', 'frx', 'fry', 'frz', 'fsc', 'fsp', 'fr', 'fs', 'jitter', 'rndx', 'rndy', 'rndz',
+                   'rnd', 'r', 'shad', 'xbord', 'xshad', 'ybord', 'yshad', 'z', '1img', '1va', '1vc',
+                   '1a', '1c', '2img', '2va', '2vc', '2a', '2c', '3img', '3va', '3vc', '3a', '3c', '4img',
+                   '4va', '4vc', '4a', '4c' }
+}
 
-    return _G.table.concat(textBuffer)
-end
-
-local function consumeSingleAssTag(peek, next)
-    if peek() == '}' then
-
-    end
-end
-
-function parseAssText(text)
+function Parser.getUtils(text)
     local i = 1
 
     local function peek()
         return text:sub(i, i)
     end
 
-    local function next()
+    local function next(delta)
+        if delta == nil then
+            delta = 1
+        end
+
         local c = peek()
         i = i + 1
         return c
     end
 
-    local function eof()
-        return i > #text
+    local function match(x)
+        return text:sub(i, i + #x - 1) == x
     end
+
+    local function remember()
+        return i
+    end
+
+    local function restore(x)
+        i = x
+    end
+
+    return peek, next, match, remember, restore
+end
+
+function Parser.Whitespaces(peek, next, match, remember, restore)
+    while true do
+        local c = peek()
+        if c ~= ' ' and c ~= '\t' and c ~= '　' then
+            break
+        end
+
+        next()
+    end
+end
+
+function Parser.NonChar(charList, peek, next, match, remember, restore)
+    local output = {}
+    while true do
+        local c = peek()
+        if c == '' then
+            break
+        end
+
+        local matched = false
+        for i = 1, #charList do
+            if c == charList[i] then
+                matched = true
+                break
+            end
+        end
+        if matched then
+            break
+        end
+
+        _G.table.insert(output, next())
+    end
+
+    if #output == 0 then
+        return nil
+    else
+        return _G.table.concat(output)
+    end
+end
+
+function Parser.TagParamListItem(peek, next, match, remember, restore)
+    Parser.Whitespaces(peek, next, match, remember, restore)
+
+    local maybeTag = Parser.Tag(peek, next, match, remember, restore)
+    if maybeTag ~= nil then
+        return maybeTag
+    end
+
+    local normalItem = Parser.NonChar({ ',', ')', '}' }, peek, next, match, remember, restore)
+    if normalItem ~= nil then
+        normalItem = trim(normalItem)
+    end
+    return normalItem
+end
+
+function Parser.TagParamList(peek, next, match, remember, restore)
+    local loc = remember()
+
+    if peek() ~= '(' then
+        return nil
+    end
+    next()
 
     local output = {}
 
-    while not eof() do
-        local normalText = consumeAssNormalText(peek, next)
-        _G.table.insert(output, { type = 'text', text = normalText })
+    while true do
+        local listItem = Parser.TagParamListItem(peek, next, match, remember, restore)
+        _G.table.insert(output, listItem)
 
-        if next() ~= '{' then
-            break
+        if peek() == ',' then
+            next()
         end
+        Parser.Whitespaces(peek, next, match, remember, restore)
 
-        while peek() ~= '}' and not eof() do
-            local tagName, tagParams = consumeSingleAssTag(peek, next)
-            _G.table.insert(output, { type = 'text', name = tagName, params = tagParams })
-        end
-
-        if next() ~= '}' then
+        local c = peek()
+        if c == ')' or c == '}' or c == '' then
             break
         end
     end
 
-    return output
+    if peek() == ')' then
+        next()
+        return output
+    else
+        restore(loc)
+        return nil
+    end
 end
+
+function Parser.Tag(peek, next, match, remember, restore)
+    local loc = remember()
+
+    if peek() ~= '\\' then
+        return nil, nil
+    end
+    next()
+
+    Parser.Whitespaces(peek, next, match, remember, restore)
+    local validTagName = nil
+
+    for i = 1, #Parser.VALID_TAGS do
+        local candidate = Parser.VALID_TAGS[i]
+        if match(candidate) then
+            validTagName = candidate
+            next(#candidate)
+            break
+        end
+    end
+
+    if validTagName == nil then
+        restore(loc)
+        return nil, nil
+    end
+
+    Parser.Whitespaces(peek, next, match, remember, restore)
+
+    local tagParams = Parser.TagParamList(peek, next, match, remember, restore)
+    if tagParams == nil then
+        local singleParam = trim(Parser.NonChar({'\\', '}'}, peek, next, match, remember, restore))
+        if singleParam == '' then
+            tagParams = {}
+        else
+            tagParams = { singleParam }
+        end
+    end
+
+    return validTagName, tagParams
+end
+
+function Parser.NonTag(peek, next, match, remember, restore)
+    local output = {}
+
+    if peek() == '\\' then
+        output = { next() }        
+    end
+    
+    local nonTag = Parser.NonChar({'\\', '}'}, peek, next, match, remember, restore)
+    if nonTag ~= nil then
+        _G.table.insert(output, nonTag)
+    end
+
+    if #output == 0 then
+        return nil
+    else
+        return _G.table.concat(output)
+    end
+end
+
+function Parser.TagBlock(peek, next, match, remember, restore)
+    local loc = remember()
+
+    if peek() ~= '{' then
+        return nil
+    end
+
+    next()
+
+    local output = {}
+
+    while true do
+        local tagName, tagParams = Parser.Tag(peek, next, match, remember, restore)
+        local nonTag = nil
+
+        if tagName ~= nil then
+            _G.table.insert(output, {name = tagName, params = tagParams})
+        else
+            nonTag = Parser.NonTag(peek, next, match, remember, restore)
+        end
+
+        if tagName == nil and nonTag == nil then
+            break
+        end
+    end
+
+    if peek() == '}' then
+        next()
+        return {type = 'block', tags = output}
+    else
+        restore(loc)
+        return nil
+    end
+end
+
+function Parser.Dialogue(text)
+    local peek, next, match, remember, restore = Parser.getUtils(text)
+    local output = {}
+
+    Parser.Whitespaces(peek, next, match, remember, restore)
+    while true do
+        local blockOrText = Parser.TagBlock(peek, next, match, remember, restore)
+        if blockOrText == nil then
+            blockOrText = {
+                type = 'text',
+                text = Parser.NonChar({'{'}, peek, next, match, remember, restore)
+            }
+        end
+        if blockOrText == nil then
+            break
+        end
+
+        _G.table.insert(output, blockOrText)
+    end
+end
+
+function analyzedParamForStyleAndTag()
+end
+
+function transform(text, strategies)
+    local dialogue = Parser.Dialogue(text)
+    local output = {}
+    
+    for i = 1, #dialogue do
+        local blockOrText = dialogue[i]
+        if blockOrText.type == 'text' then
+            _G.table.insert(output, blockOrText.text)
+        else
+            local blockOutput = {}
+
+            for j = 1, #blockOrText.tags do
+                local tag = blockOrText.tags[j]
+                local newTag = nil
+
+                if strategies[tag.name] ~= nil then
+                    local strategy = strategies[tag.name]
+                    if strategy.type == 'transform' then
+                        -[[ `func` 返回的是带 \ 的标签内容 ]]
+                        newTag = strategy.func(tag.name, tag.params)
+                    elseif strategy.type == 'discard' then
+                        newTag = ''
+                    end
+                elseif tag.name == 'r' then
+                    local rTarget = tag.params[1]
+                    if rTarget == nil or currStyles[rTarget] == nil then
+                        rTarget == ''
+                    end
+
+                    if rTarget == '' then
+                        st = line.styleref
+                    else
+                        st = currStyles[tag.params[1]]
+                    end
+
+                    for strategyTagName, strategy in pairs(strategies) do
+                        local analyzedParams = analyzedParamForStyleAndTag(st, strategyTagName)
+                        newTag = strategy.func(strategyTagName, analyzedParams)
+                    end
+                end
+
+                if newTag == nil then
+                    _G.table.insert(blockOutput, '\\' .. tag.name)
+                    if #tag.params == 1 then
+                        _G.table.insert(blockOutput, tag.params[1])
+                    else
+                        _G.table.insert(blockOutput, '(')
+                        for k = 1, #tag.params do
+                            _G.table.insert(blockOutput, tag.params[k])
+                            if k ~= #tag.params then
+                                _G.table.insert(blockOutput, ',')
+                            end
+                        end
+                        _G.table.insert(blockOutput, ')')
+                    end
+                else
+                    _G.table.insert(blockOutput, newTag)
+                end
+            end
+
+            _G.table.insert(output, '{' .. _G.table.concat(blockOutput) .. '}')
+        end
+    end
+
+    return _G.table.concat(output)
+end
+
